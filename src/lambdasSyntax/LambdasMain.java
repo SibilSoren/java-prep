@@ -19,5 +19,6 @@ public class LambdasMain {
 
         List<String> input = List.of("hello", "    world", "\t  ","", "goodbye");
         System.out.println(countMatchingString(input, s -> s.trim().isEmpty()));
+        System.out.println(countMatchingString(input, String::isBlank)); //Method references
     }
 }
